@@ -8,7 +8,7 @@ let score = 0;
 function decisionScenario(question, options, correctAnswerIndex) {
     console.log(question);
 
-    // Displaying options to the player, Changed the loop condition to iterate through all options
+    // Displaying options to the player, Changed the loop condition to go through all options
     for (let i = 0; i < options.length; i++) {
         console.log(`${i + 1}. ${options[i]}`);
     }
@@ -16,7 +16,7 @@ function decisionScenario(question, options, correctAnswerIndex) {
     // Getting player's answer, Removed unnecessary variable 'j' and fixed the player's answer calculation
     let playerAnswer = parseInt(prompt("Enter your choice (number):")) - 1;
 
-    // Checking if the answer is correct, Corrected the score update logic
+    // Checking if the answer is correct, Corrected the score updating logarithm 
     if (playerAnswer === correctAnswerIndex) {
         console.log('Correct! You made an environment-friendly decision. +1 point.');
         score++;
